@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D&D Boutique Automobile</title>
+    <link rel="stylesheet" href="HomePage.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="menu">
+            <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="dropdown">
+                Menu v
+            </button>
+
+            <div id="dropdown" class="dropdown" aria-hidden="true">
+                <a class="dropdown-link" href="#about">A propos de nous</a>
+
+                <div class="submenu-group">
+                    <button id="brandsToggle" class="submenu-toggle" aria-expanded="false" aria-controls="brandsDropdown">
+                        Nos marques de voiture
+                    </button>
+
+                    <div id="brandsDropdown" class="submenu" aria-hidden="true">
+                        <a class="brand-link" href="#">BMW</a>
+                        <a class="brand-link" href="#">Mercedes</a>
+                        <a class="brand-link" href="#">Audi</a>
+                        <a class="brand-link" href="#">Porsche</a>
+                        <a class="brand-link" href="#">Alfa Romeo</a>
+                        <a class="brand-link" href="#">Lamborghini</a>
+                        <a class="brand-link" href="#">Ferrari</a>
+                        <a class="brand-link" href="#">Renault</a>
+                        <a class="brand-link" href="#">Volkswagen</a>
+                    </div>
+                </div>
+
+                <a class="dropdown-link" href="#contact">Nous contacter</a>
+            </div>
+        </div>
+
+        <div class="logo">
+            <h1>D&D</h1>
+            <p>Signature Automobile</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero reveal">
+            <p class="hero-tag">SELECTION 2026</p>
+            <h2>L'elegance mecanique, sans compromis</h2>
+            <p class="hero-text">
+                Du confort premium a la sportivite pure, nous vous accompagnons dans le choix de votre prochaine voiture
+                avec une approche claire, transparente et orientee plaisir de conduite.
+            </p>
+            <div class="hero-actions">
+                <a href="#brands" class="cta cta-primary">Voir les marques</a>
+                <a href="#contact" class="cta cta-secondary">Demander un rappel</a>
+            </div>
+        </section>
+
+        <section id="about" class="section-card reveal delay-1">
+            <h2>Notre promesse</h2>
+            <p>
+                D&D n'est pas une simple vitrine. Nous sommes une boutique automobile construite autour d'une idee simple:
+                chaque client doit repartir avec un vehicule qui correspond a son style de vie, pas seulement a une fiche technique.
+            </p>
+            <div class="about-grid">
+                <article>
+                    <h3>Conseil sur mesure</h3>
+                    <p>Analyse de vos besoins reels: trajet quotidien, budget, usages famille ou passion.</p>
+                </article>
+                <article>
+                    <h3>Vehicules verifies</h3>
+                    <p>Selection rigoureuse des modeles pour privilegier fiabilite, confort et valeur a long terme.</p>
+                </article>
+                <article>
+                    <h3>Experience premium</h3>
+                    <p>Un parcours simple, humain et moderne de la premiere visite jusqu'a la livraison.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="brands" class="section-card reveal delay-2">
+            <h2>Marques mises en avant</h2>
+            <p>Choisissez une marque pour acceder plus tard a sa page dediee.</p>
+            <div class="brand-cards">
+                <a href="#" class="brand-card">BMW</a>
+                <a href="#" class="brand-card">Mercedes</a>
+                <a href="#" class="brand-card">Audi</a>
+                <a href="#" class="brand-card">Porsche</a>
+                <a href="#" class="brand-card">Alfa Romeo</a>
+                <a href="#" class="brand-card">Lamborghini</a>
+                <a href="#" class="brand-card">Ferrari</a>
+                <a href="#" class="brand-card">Renault</a>
+                <a href="#" class="brand-card">Volkswagen</a>
+
+
+            </div>
+        </section>
+
+        <section id="contact" class="section-card contact-section reveal delay-3">
+            <h2>Nous contacter</h2>
+            <p>Laissez-nous un message, nous vous recontactons rapidement .</p>
+
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Nom</label>
+                <input id="name" name="name" type="text" placeholder="Votre nom" />
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="votre@email.com" />
+
+                <label for="comment">Commentaire</label>
+                <textarea id="comment" name="comment" rows="5" placeholder="Votre message"></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="HomePage.js"></script>
+</body>
+</html>
