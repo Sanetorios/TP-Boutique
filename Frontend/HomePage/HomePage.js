@@ -2,7 +2,6 @@ const menuToggle = document.getElementById("menuToggle");
 const dropdown = document.getElementById("dropdown");
 const brandsToggle = document.getElementById("brandsToggle");
 const brandsDropdown = document.getElementById("brandsDropdown");
-const brandLinks = document.querySelectorAll(".brand-link, .brand-card");
 const contactForm = document.querySelector(".contact-form");
 
 function closeBrandsMenu() {
@@ -49,9 +48,10 @@ navigationLinks.forEach(function (link) {
     });
 });
 
-brandLinks.forEach(function (link) {
-    link.addEventListener("click", function (event) {
-        event.preventDefault();
+const brandMenuLinks = document.querySelectorAll(".brand-link");
+brandMenuLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+        closeMainMenu();
     });
 });
 
