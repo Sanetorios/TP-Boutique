@@ -2,7 +2,8 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const root = path.join(__dirname, 'Frontend', 'HomePage');
+const frontendRoot = path.join(__dirname, 'Frontend');
+const backendSrcRoot = path.join(__dirname, '..', 'Backend', 'src');
 const port = process.env.PORT || 3000;
 
 const mimeTypes = {
@@ -13,18 +14,32 @@ const mimeTypes = {
   '.png': 'image/png',
   '.jpg': 'image/jpeg',
   '.jpeg': 'image/jpeg',
+  '.webp': 'image/webp',
   '.svg': 'image/svg+xml',
-  '.ico': 'image/x-icon'
+  '.ico': 'image/x-icon',
+  '.mp4': 'video/mp4',
+  '.m3u8': 'application/vnd.apple.mpegurl',
+  '.ts': 'video/mp2t'
 };
 
 const server = http.createServer((req, res) => {
   let requestPath = req.url.split('?')[0];
+  requestPath = decodeURIComponent(requestPath);
   if (requestPath === '/' || requestPath === '') {
-    requestPath = '/HomePage.html';
+    res.writeHead(302, { Location: '/HomePage/HomePage.html' });
+    res.end();
+    return;
   }
 
-  const filePath = path.join(root, requestPath);
-  if (!filePath.startsWith(root)) {
+  const isSrcRequest = requestPath.startsWith('/src/');
+  const baseRoot = isSrcRequest ? backendSrcRoot : frontendRoot;
+  const relativePath = isSrcRequest
+    ? requestPath.slice('/src/'.length)
+    : requestPath.replace(/^\/+/, '');
+
+  const filePath = path.resolve(baseRoot, relativePath);
+  const safeRoot = path.resolve(baseRoot);
+  if (!filePath.startsWith(safeRoot + path.sep) && filePath !== safeRoot) {
     res.writeHead(400);
     res.end('Bad request');
     return;

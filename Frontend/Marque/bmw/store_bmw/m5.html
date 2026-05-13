@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMW M5 Touring</title>
+  <link rel="stylesheet" href="m5.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-home" href="/HomePage/HomePage.html">Retour accueil</a>
+    <div class="logo">
+      <h1>D&D</h1>
+      <p>Signature Automobile</p>
+    </div>
+  </header>
+
+  <main class="page">
+    <h2>BMW M5 Touring</h2>
+    <p class="intro">Break sportif hautes performances avec motorisation hybride M.</p>
+
+    <section class="vehicle-card">
+      <div class="carousel">
+        <button id="prevBtn" class="arrow-btn" type="button" aria-label="Image precedente">&#10094;</button>
+        <img id="carImage" class="vehicle-image" src="./assets/m5/bleu/1.webp" alt="BMW M5 Touring bleue" />
+        <button id="nextBtn" class="arrow-btn" type="button" aria-label="Image suivante">&#10095;</button>
+      </div>
+      <div id="vehicleCaption" class="vehicle-caption">BMW M5 Touring - coloris bleu - photo 1/5</div>
+      <div class="color-picker" aria-label="Choix de couleur">
+        <button class="color-dot is-active" type="button" data-color="bleu" aria-label="Couleur bleue"></button>
+        <button class="color-dot" type="button" data-color="noire" aria-label="Couleur noire"></button>
+      </div>
+      <div class="vehicle-price">Prix: a partir de 159 000 EUR</div>
+    </section>
+
+    <section class="spec-section">
+      <h3>Caracteristiques principales</h3>
+      <ul class="spec-list">
+        <li>Moteur: V8 4.4L TwinPower Turbo + moteur electrique</li>
+        <li>Puissance combinee: 727 ch (535 kW)</li>
+        <li>Couple maximal: 1 000 Nm</li>
+        <li>Transmission: xDrive integral + boite automatique 8 rapports</li>
+        <li>0 a 100 km/h: environ 3.6 s</li>
+        <li>Carrosserie: M5 Touring (break 5 portes)</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="m5.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMW 120d</title>
+  <link rel="stylesheet" href="120d.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-home" href="/HomePage/HomePage.html">Retour accueil</a>
+    <div class="logo">
+      <h1>D&D</h1>
+      <p>Signature Automobile</p>
+    </div>
+  </header>
+
+  <main class="page">
+    <h2>BMW 120d</h2>
+    <p class="intro">Berline compacte diesel, confortable et economique pour tous les jours.</p>
+
+    <section class="vehicle-card">
+      <div class="carousel">
+        <button id="prevBtn" class="arrow-btn" type="button" aria-label="Image precedente">&#10094;</button>
+        <img id="carImage" class="vehicle-image" src="./assets/120d/grise/1.webp" alt="BMW 120d grise" />
+        <button id="nextBtn" class="arrow-btn" type="button" aria-label="Image suivante">&#10095;</button>
+      </div>
+      <div id="vehicleCaption" class="vehicle-caption">BMW 120d - coloris grise - photo 1/5</div>
+      <div class="color-picker" aria-label="Choix de couleur">
+        <button class="color-dot is-active" type="button" data-color="grise" aria-label="Couleur grise"></button>
+        <button class="color-dot" type="button" data-color="noire" aria-label="Couleur noire"></button>
+        <button class="color-dot" type="button" data-color="blanche" aria-label="Couleur blanche"></button>
+      </div>
+      <div class="vehicle-price">Prix: a partir de 46 500 EUR</div>
+    </section>
+
+    <section class="spec-section">
+      <h3>Caracteristiques principales</h3>
+      <ul class="spec-list">
+        <li>Moteur: 2.0 Diesel</li>
+        <li>Puissance: 120 kW</li>
+        <li>Couple: 400 Nm</li>
+        <li>Boite: Automatique</li>
+        <li>Couleur: Gris</li>
+      </ul>
+    </section>
+
+  </main>
+  <script src="120d.js"></script>
+</body>
+</html>
