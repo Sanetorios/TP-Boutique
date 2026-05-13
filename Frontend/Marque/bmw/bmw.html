@@ -4,8 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BMW</title>
+  <link rel="stylesheet" href="bmw.css" />
 </head>
 <body>
-  <h1>BMW</h1>
+  <nav class="model-menu" aria-label="Menu des modeles BMW">
+    <label for="modelSelect">Modeles BMW</label>
+    <select id="modelSelect" class="model-select">
+      <option value="">Choisir un modele</option>
+      <option value="/Marque/bmw/store_bmw/m5.html">BMW M5 Touring</option>
+      <option value="/Marque/bmw/store_bmw/120d.html">BMW 120d</option>
+    </select>
+  </nav>
+
+  <main class="page">
+    <h1>BMW</h1>
+    <p class="subtitle">Video officielle</p>
+
+    <video class="brand-video" controls autoplay muted loop playsinline preload="auto">
+      <source src="./bmw.mp4" type="video/mp4" />
+    </video>
+  </main>
+
+  <script src="bmw.js"></script>
 </body>
 </html>

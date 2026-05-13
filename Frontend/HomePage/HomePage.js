@@ -2,7 +2,6 @@ const menuToggle = document.getElementById("menuToggle");
 const dropdown = document.getElementById("dropdown");
 const brandsToggle = document.getElementById("brandsToggle");
 const brandsDropdown = document.getElementById("brandsDropdown");
-const contactForm = document.querySelector(".contact-form");
 
 function closeBrandsMenu() {
     brandsDropdown.classList.remove("open");
@@ -55,10 +54,3 @@ brandMenuLinks.forEach(function (link) {
     });
 });
 
-if (contactForm) {
-    contactForm.addEventListener("submit", function (event) {
-        event.preventDefault();
-        alert("Merci. Ceci est une demo, aucun envoi reel n'est effectue.");
-        contactForm.reset();
-    });
-}
