@@ -4,20 +4,23 @@ const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 const colorDots = document.querySelectorAll(".color-dot");
 
+const buildSrc = (colorFolder, fileName) =>
+  `/src/bmw/M5/${colorFolder}/${encodeURIComponent(fileName)}`;
+
 const imagesByColor = {
   bleu: [
-    "./assets/m5/bleu/1.webp",
-    "./assets/m5/bleu/2.webp",
-    "./assets/m5/bleu/3.webp",
-    "./assets/m5/bleu/4.webp",
-    "./assets/m5/bleu/5.webp"
+    buildSrc("bleu", "M5 bleu 1.webp"),
+    buildSrc("bleu", "M5 bleu 2.webp"),
+    buildSrc("bleu", "M5 bleu 3.webp"),
+    buildSrc("bleu", "M5 bleu 4.webp"),
+    buildSrc("bleu", "M5 bleu 5.webp")
   ],
   noire: [
-    "./assets/m5/noire/1.webp",
-    "./assets/m5/noire/2.webp",
-    "./assets/m5/noire/3.webp",
-    "./assets/m5/noire/4.webp",
-    "./assets/m5/noire/5.webp"
+    buildSrc("noire", "M5 noire 1.webp"),
+    buildSrc("noire", "M5 noire 2.webp"),
+    buildSrc("noire", "M5 noire 3.webp"),
+    buildSrc("noire", "M5 noire 4.webp"),
+    buildSrc("noire", "M5 noire 5.webp")
   ]
 };
 

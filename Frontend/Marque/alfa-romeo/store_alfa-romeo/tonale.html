@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alfa Romeo Tonale</title>
+  <link rel="stylesheet" href="tonale.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-home" href="/HomePage/HomePage.html">Retour accueil</a>
+    <div class="logo">
+      <h1>D&D</h1>
+      <p>Signature Automobile</p>
+    </div>
+  </header>
+
+  <main class="page">
+    <h2>Alfa Romeo Tonale</h2>
+    <p class="intro">SUV compact premium au style italien, ideal pour la ville et les longs trajets.</p>
+
+    <section class="vehicle-card">
+      <div class="carousel">
+        <button id="prevBtn" class="arrow-btn" type="button" aria-label="Image precedente">&#10094;</button>
+        <img id="carImage" class="vehicle-image" src="/src/alfa-romeo/tonale/bleu/tonale%20bleu%201.png" alt="Alfa Romeo Tonale bleue" />
+        <button id="nextBtn" class="arrow-btn" type="button" aria-label="Image suivante">&#10095;</button>
+      </div>
+      <div id="vehicleCaption" class="vehicle-caption">Alfa Romeo Tonale - coloris bleu - photo 1/4</div>
+      <div class="color-picker" aria-label="Choix de couleur">
+        <button class="color-dot is-active" type="button" data-color="bleu" aria-label="Couleur bleue"></button>
+        <button class="color-dot" type="button" data-color="rouge" aria-label="Couleur rouge"></button>
+        <button class="color-dot" type="button" data-color="vert" aria-label="Couleur verte"></button>
+        <button class="color-dot" type="button" data-color="or" aria-label="Couleur or"></button>
+      </div>
+      <div class="vehicle-price">Prix: a partir de 46 900 EUR</div>
+    </section>
+
+    <section class="spec-section">
+      <h3>Caracteristiques principales</h3>
+      <ul class="spec-list">
+        <li>Moteur: 1.5 Hybrid ou Plug-in Hybrid Q4</li>
+        <li>Puissance: jusqu'a 280 ch</li>
+        <li>Boite: Automatique 7 rapports</li>
+        <li>Transmission: Traction ou Q4 integral</li>
+        <li>Ecran central: 10.25 pouces</li>
+        <li>Coffre: jusqu'a 500 L</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="tonale.js"></script>
+</body>
+</html>

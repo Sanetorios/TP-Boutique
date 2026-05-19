@@ -4,27 +4,30 @@ const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 const colorDots = document.querySelectorAll(".color-dot");
 
+const buildSrc = (colorFolder, fileName) =>
+  `/src/bmw/120d/${colorFolder}/${encodeURIComponent(fileName)}`;
+
 const imagesByColor = {
   grise: [
-    "./assets/120d/grise/1.webp",
-    "./assets/120d/grise/2.webp",
-    "./assets/120d/grise/3.webp",
-    "./assets/120d/grise/4.webp",
-    "./assets/120d/grise/5.webp"
+    buildSrc("grise", "120d grise 1.webp"),
+    buildSrc("grise", "120d grise 2.webp"),
+    buildSrc("grise", "120d grise 3.webp"),
+    buildSrc("grise", "120d grise  4.webp"),
+    buildSrc("grise", "120d grise 5.webp")
   ],
   noire: [
-    "./assets/120d/noire/1.webp",
-    "./assets/120d/noire/2.webp",
-    "./assets/120d/noire/3.webp",
-    "./assets/120d/noire/4.webp",
-    "./assets/120d/noire/5.webp"
+    buildSrc("noire", "120d noire 1.webp"),
+    buildSrc("noire", "120d noire 2.webp"),
+    buildSrc("noire", "120d noire 3.webp"),
+    buildSrc("noire", "120d noire 4.webp"),
+    buildSrc("noire", "120d noire 5.webp")
   ],
   blanche: [
-    "./assets/120d/blanche/1.webp",
-    "./assets/120d/blanche/2.webp",
-    "./assets/120d/blanche/3.webp",
-    "./assets/120d/blanche/4.webp",
-    "./assets/120d/blanche/5.webp"
+    buildSrc("blanche", "120d blanche 1.webp"),
+    buildSrc("blanche", "120d blanche 2.webp"),
+    buildSrc("blanche", "120d blanche 3.webp"),
+    buildSrc("blanche", "120d blanche 4.webp"),
+    buildSrc("blanche", "120d blanche 5.webp")
   ]
 };
 

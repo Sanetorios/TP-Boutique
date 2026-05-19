@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alfa Romeo Giulia</title>
+  <link rel="stylesheet" href="giulia.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-home" href="/HomePage/HomePage.html">Retour accueil</a>
+    <div class="logo">
+      <h1>D&D</h1>
+      <p>Signature Automobile</p>
+    </div>
+  </header>
+
+  <main class="page">
+    <h2>Alfa Romeo Giulia</h2>
+    <p class="intro">Berline sportive italienne, elegante et dynamique pour une conduite passion.</p>
+
+    <section class="vehicle-card">
+      <div class="carousel">
+        <button id="prevBtn" class="arrow-btn" type="button" aria-label="Image precedente">&#10094;</button>
+        <img id="carImage" class="vehicle-image" src="/src/alfa-romeo/giulia/blue/giulia%20bleue%201.png" alt="Alfa Romeo Giulia bleue" />
+        <button id="nextBtn" class="arrow-btn" type="button" aria-label="Image suivante">&#10095;</button>
+      </div>
+      <div id="vehicleCaption" class="vehicle-caption">Alfa Romeo Giulia - coloris blue - photo 1/3</div>
+      <div class="color-picker" aria-label="Choix de couleur">
+        <button class="color-dot is-active" type="button" data-color="blue" aria-label="Couleur bleue"></button>
+        <button class="color-dot" type="button" data-color="noire" aria-label="Couleur noire"></button>
+        <button class="color-dot" type="button" data-color="rouge" aria-label="Couleur rouge"></button>
+        <button class="color-dot" type="button" data-color="blanche" aria-label="Couleur blanche"></button>
+      </div>
+      <div class="vehicle-price">Prix: a partir de 52 900 EUR</div>
+    </section>
+
+    <section class="spec-section">
+      <h3>Caracteristiques principales</h3>
+      <ul class="spec-list">
+        <li>Moteur: 2.0 Turbo essence</li>
+        <li>Puissance: 280 ch</li>
+        <li>Couple: 400 Nm</li>
+        <li>Transmission: Automatique 8 rapports</li>
+        <li>0 a 100 km/h: 5.2 s</li>
+        <li>Coffre: 480 L</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="giulia.js"></script>
+</body>
+</html>

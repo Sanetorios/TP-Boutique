@@ -7,13 +7,21 @@
   <link rel="stylesheet" href="alfa-romeo.css" />
 </head>
 <body>
+  <nav class="model-menu" aria-label="Menu des modeles Alfa Romeo">
+    <label for="modelSelect">Modeles Alfa Romeo</label>
+    <select id="modelSelect" class="model-select">
+      <option value="">Choisir un modele</option>
+      <option value="/Marque/alfa-romeo/store_alfa-romeo/giulia.html">Alfa Romeo Giulia</option>
+      <option value="/Marque/alfa-romeo/store_alfa-romeo/tonale.html">Alfa Romeo Tonale</option>
+    </select>
+  </nav>
+
   <main class="page">
     <h1>Alfa Romeo</h1>
     <p class="subtitle">Video officielle</p>
 
     <video class="brand-video" controls autoplay muted loop playsinline preload="auto">
       <source src="./alfa-romeo.mp4" type="video/mp4" />
-      Votre navigateur ne supporte pas la lecture video.
     </video>
   </main>
 

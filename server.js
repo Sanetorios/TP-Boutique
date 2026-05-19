@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const frontendRoot = path.join(__dirname, 'Frontend');
-const backendSrcRoot = path.join(__dirname, '..', 'Backend', 'src');
+const backendSrcRoot = path.join(__dirname, 'Backend', 'src');
 const port = process.env.PORT || 3000;
 
 const mimeTypes = {
