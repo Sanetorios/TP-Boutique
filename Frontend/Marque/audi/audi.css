@@ -10,6 +10,35 @@ body {
   background: #000;
 }
 
+.model-menu {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.model-menu label {
+  font-size: 0.92rem;
+  color: #ffffff;
+  text-align: left;
+}
+
+.model-select {
+  min-width: 180px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #3a3a3a;
+  background: #434040;
+  color: #ffffff;
+}
+
 .page {
   width: min(980px, 100%);
   margin: 0 auto;
@@ -33,7 +62,4 @@ h1 {
   width: min(920px, 100%);
   margin: 0 auto;
   border-radius: 14px;
-  border: 1px solid #4e4e4e;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-  background: #000;
 }

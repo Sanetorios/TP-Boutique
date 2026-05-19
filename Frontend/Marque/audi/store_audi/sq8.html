@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audi SQ8</title>
+  <link rel="stylesheet" href="sq8.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-home" href="/HomePage/HomePage.html">Retour accueil</a>
+    <div class="logo">
+      <h1>D&D</h1>
+      <p>Signature Automobile</p>
+    </div>
+  </header>
+
+  <main class="page">
+    <h2>Audi SQ8</h2>
+    <p class="intro">SUV sportif haut de gamme, puissant et confortable pour tous les trajets.</p>
+
+    <section class="vehicle-card">
+      <div class="carousel">
+        <button id="prevBtn" class="arrow-btn" type="button" aria-label="Image precedente">&#10094;</button>
+        <img id="carImage" class="vehicle-image" src="/src/audi/sq8/blanche/sq8%20blanche%201.png" alt="Audi SQ8 blanche" />
+        <button id="nextBtn" class="arrow-btn" type="button" aria-label="Image suivante">&#10095;</button>
+      </div>
+      <div id="vehicleCaption" class="vehicle-caption">Audi SQ8 - coloris blanche - photo 1/5</div>
+      <div class="color-picker" aria-label="Choix de couleur">
+        <button class="color-dot is-active" type="button" data-color="blanche" aria-label="Couleur blanche"></button>
+        <button class="color-dot" type="button" data-color="noire" aria-label="Couleur noire"></button>
+      </div>
+      <div class="vehicle-price">Prix: a partir de 129 500 EUR</div>
+    </section>
+
+    <section class="spec-section">
+      <h3>Caracteristiques principales</h3>
+      <ul class="spec-list">
+        <li>Moteur: V8 4.0 TFSI</li>
+        <li>Puissance: 507 ch</li>
+        <li>Boite: Tiptronic 8 rapports</li>
+        <li>Transmission: Quattro integral</li>
+        <li>0 a 100 km/h: 4.1 s</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="sq8.js"></script>
+</body>
+</html>

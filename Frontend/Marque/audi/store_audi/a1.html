@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audi A1</title>
+  <link rel="stylesheet" href="a1.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-home" href="/HomePage/HomePage.html">Retour accueil</a>
+    <div class="logo">
+      <h1>D&D</h1>
+      <p>Signature Automobile</p>
+    </div>
+  </header>
+
+  <main class="page">
+    <h2>Audi A1</h2>
+    <p class="intro">Citadine premium compacte, agile et ideale pour un usage urbain.</p>
+
+    <section class="vehicle-card">
+      <div class="carousel">
+        <button id="prevBtn" class="arrow-btn" type="button" aria-label="Image precedente">&#10094;</button>
+        <img id="carImage" class="vehicle-image" src="/src/audi/a1/grise/a1%20grise%201.png" alt="Audi A1 grise" />
+        <button id="nextBtn" class="arrow-btn" type="button" aria-label="Image suivante">&#10095;</button>
+      </div>
+      <div id="vehicleCaption" class="vehicle-caption">Audi A1 - coloris grise - photo 1/5</div>
+      <div class="color-picker" aria-label="Choix de couleur">
+        <button class="color-dot is-active" type="button" data-color="grise" aria-label="Couleur grise"></button>
+        <button class="color-dot" type="button" data-color="noire" aria-label="Couleur noire"></button>
+        <button class="color-dot" type="button" data-color="blanche" aria-label="Couleur blanche"></button>
+      </div>
+      <div class="vehicle-price">Prix: a partir de 32 900 EUR</div>
+    </section>
+
+    <section class="spec-section">
+      <h3>Caracteristiques principales</h3>
+      <ul class="spec-list">
+        <li>Moteur: 1.5 TFSI essence</li>
+        <li>Puissance: 150 ch</li>
+        <li>Boite: S tronic 7 rapports</li>
+        <li>0 a 100 km/h: 8.0 s</li>
+        <li>Coffre: 335 L</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="a1.js"></script>
+</body>
+</html>

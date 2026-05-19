@@ -7,13 +7,21 @@
   <link rel="stylesheet" href="audi.css" />
 </head>
 <body>
+  <nav class="model-menu" aria-label="Menu des modeles Audi">
+    <label for="modelSelect">Modeles Audi</label>
+    <select id="modelSelect" class="model-select">
+      <option value="">Choisir un modele</option>
+      <option value="/Marque/audi/store_audi/a1.html">Audi A1</option>
+      <option value="/Marque/audi/store_audi/sq8.html">Audi SQ8</option>
+    </select>
+  </nav>
+
   <main class="page">
     <h1>Audi</h1>
     <p class="subtitle">Video officielle</p>
 
     <video class="brand-video" controls autoplay muted loop playsinline preload="auto">
       <source src="./audi.mp4" type="video/mp4" />
-      Votre navigateur ne supporte pas la lecture video.
     </video>
   </main>
 
