@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferrari 812</title>
+  <link rel="stylesheet" href="812.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-home" href="/HomePage/HomePage.html">Retour accueil</a>
+    <div class="logo">
+      <h1>D&D</h1>
+      <p>Signature Automobile</p>
+    </div>
+  </header>
+
+  <main class="page">
+    <h2>Ferrari 812</h2>
+    <p class="intro">Grand tourisme V12, performance extreme et design iconique Ferrari.</p>
+
+    <section class="vehicle-card">
+      <div class="carousel">
+        <button id="prevBtn" class="arrow-btn" type="button" aria-label="Image precedente">&#10094;</button>
+        <img id="carImage" class="vehicle-image" src="/src/ferrari/812/rouge/812%20rouge%201.webp" alt="Ferrari 812 rouge" />
+        <button id="nextBtn" class="arrow-btn" type="button" aria-label="Image suivante">&#10095;</button>
+      </div>
+      <div id="vehicleCaption" class="vehicle-caption">Ferrari 812 - coloris rouge - photo 1/4</div>
+      <div class="color-picker" aria-label="Choix de couleur">
+        <button class="color-dot is-active" type="button" data-color="rouge" aria-label="Couleur rouge"></button>
+        <button class="color-dot" type="button" data-color="bleu" aria-label="Couleur bleue"></button>
+        <button class="color-dot" type="button" data-color="grise" aria-label="Couleur grise"></button>
+      </div>
+      <div class="vehicle-price">Prix: a partir de 410 000 EUR</div>
+    </section>
+
+    <section class="spec-section">
+      <h3>Caracteristiques principales</h3>
+      <ul class="spec-list">
+        <li>Moteur: V12 6.5 atmospherique</li>
+        <li>Puissance: 800 ch</li>
+        <li>Couple: 718 Nm</li>
+        <li>Boite: F1 DCT 7 rapports</li>
+        <li>0 a 100 km/h: 2.9 s</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="812.js"></script>
+</body>
+</html>

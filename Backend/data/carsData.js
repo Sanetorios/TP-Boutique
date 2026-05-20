@@ -109,6 +109,44 @@ const cars = [
       "0 a 100 km/h: 4.1 s"
     ],
     featured: true
+  },
+  {
+    id: "ferrari-812",
+    brand: "Ferrari",
+    model: "812 Superfast",
+    name: "Ferrari 812 Superfast",
+    pagePath: "/Marque/ferrari/store_ferrari/812.html",
+    cardImage: "/src/ferrari/812/bleu/812%20bleue%201.png",
+    priceFrom: 315000,
+    intro: "GT supercar italienne, moteur V12 et performances exceptionnelles.",
+    specs: [
+      "Moteur: V12 6.5 L",
+      "Puissance: 789 ch",
+      "Couple: 718 Nm",
+      "Boite: Automatique 7 rapports F1 DCT",
+      "0 a 100 km/h: 2.9 s",
+      "Vitesse maximale: 340+ km/h"
+    ],
+    featured: true
+  },
+  {
+    id: "ferrari-roma",
+    brand: "Ferrari",
+    model: "Roma",
+    name: "Ferrari Roma",
+    pagePath: "/Marque/ferrari/store_ferrari/roma.html",
+    cardImage: "/src/ferrari/roma/grise/roma%20grise%201.png",
+    priceFrom: 220000,
+    intro: "Coupé GT élégant, confortable et puissant, parfait pour l'usage quotidien en grand style.",
+    specs: [
+      "Moteur: V8 3.9 L bi-turbo",
+      "Puissance: 620 ch",
+      "Couple: 760 Nm",
+      "Boite: Automatique 8 rapports",
+      "0 a 100 km/h: 3.4 s",
+      "Design: Carrosserie aerodynamique et luxe moderne"
+    ],
+    featured: true
   }
 ];
 
