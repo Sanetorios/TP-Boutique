@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>911 Carrera</title>
+  <link rel="stylesheet" href="911-carrera.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-home" href="/HomePage/HomePage.html">Retour accueil</a>
+    <div class="logo">
+      <h1>D&D</h1>
+      <p>Signature Automobile</p>
+    </div>
+  </header>
+
+  <main class="page">
+    <h2>911 Carrera</h2>
+    <p class="intro">La 911 Carrera est Coupé sportif iconique, performance et design legendaires.</p>
+
+    <section class="vehicle-card">
+      <div class="carousel">
+        <button id="prevBtn" class="arrow-btn" type="button" aria-label="Image precedente">&#10094;</button>
+        <img id="carImage" class="vehicle-image" src="/src/porsche/911-carrera/blanche/911-carrera%20blanche%201.png" alt="911 Carrera blanche" />
+        <button id="nextBtn" class="arrow-btn" type="button" aria-label="Image suivante">&#10095;</button>
+      </div>
+      <div id="vehicleCaption" class="vehicle-caption">911 Carrera - coloris blanche - photo 1/5</div>
+      <div class="color-picker" aria-label="Choix de couleur">
+        <button class="color-dot is-active" type="button" data-color="blanche" aria-label="Couleur blanche"></button>
+        <button class="color-dot" type="button" data-color="noire" aria-label="Couleur noire"></button>
+      </div>
+      <div class="vehicle-price">Prix: a partir de 140 0000 EUR</div>
+    </section>
+
+    <section class="spec-section">
+      <h3>Caracteristiques principales</h3>
+    <ul class="spec-list">
+  <li>Moteur : 3.0 L Boxer 6 cylindres biturbo</li>
+  <li>Puissance : 394 ch</li>
+  <li>Couple : 450 Nm</li>
+  <li>Boite : Automatique 8 rapports</li>
+  <li>0 a 100 km/h : 4.1 s</li>
+  <li>Transmission : Propulsion arrière</li>
+</ul>
+    </section>
+
+  </main>
+  <script src="911-carrera.js"></script>
+  <script src="../loadCarData.js"></script>
+</body>
+</html>
