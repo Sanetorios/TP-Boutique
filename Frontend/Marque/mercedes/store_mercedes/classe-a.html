@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mercedes CLA</title>
+  <link rel="stylesheet" href="classe-a.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-home" href="/HomePage/HomePage.html">Retour accueil</a>
+    <div class="logo">
+      <h1>D&D</h1>
+      <p>Signature Automobile</p>
+    </div>
+  </header>
+
+  <main class="page">
+    <h2>Mercedes Classe A</h2>
+    <p class="intro">Le Mercedes Classe A est une voiture de luxe compacte qui allie style et performance.</p>
+
+    <section class="vehicle-card">
+      <div class="carousel">
+        <button id="prevBtn" class="arrow-btn" type="button" aria-label="Image precedente">&#10094;</button>
+        <img id="carImage" class="vehicle-image" src="/src/mercedes/classe-a/grise/%20grise%201.png" alt="Mercedes Classe A grise" />
+        <button id="nextBtn" class="arrow-btn" type="button" aria-label="Image suivante">&#10095;</button>
+      </div>
+      <div id="vehicleCaption" class="vehicle-caption">Mercedes Classe A - coloris grise - photo 1/8</div>
+      <div class="color-picker" aria-label="Choix de couleur">
+        <button class="color-dot is-active" type="button" data-color="grise" aria-label="Couleur grise"></button>
+        <button class="color-dot" type="button" data-color="blanche" aria-label="Couleur blanche"></button>
+      </div>
+      <div class="vehicle-price">Prix: a partir de 34 0000 EUR</div>
+    </section>
+
+    <section class="spec-section">
+      <h3>Caracteristiques principales</h3>
+    <ul class="spec-list">
+<ul class="spec-list">
+  <li>Moteur : 2.0 L 4 cylindres</li>
+  <li>Puissance : 116 ch</li>
+  <li>Couple : 280 Nm</li>
+  <li>Boite : Automatique 8 rapports</li>
+  <li>0 a 100 km/h : 9.7 s</li>
+  <li>Transmission : Traction avant</li>
+</ul>
+</ul>
+    </section>
+
+  </main>
+  <script src="classe-a.js"></script>
+  <script src="../loadCarData.js"></script>
+</body>
+</html>

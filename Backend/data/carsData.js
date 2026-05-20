@@ -185,7 +185,43 @@ const cars = [
       "Transmission: Integrale"
     ],
     featured: true
-  }
-];
+  },
 
+{
+  id: "mercedes-cla",
+  brand: "Mercedes",
+  model: "CLA",
+  name: "Mercedes CLA",
+  pagePath: "/Marque/mercedes/store_mercedes/cla.html",
+  cardImage: "/src/mercedes/cla/grise/cla%20grise%201.png",
+  priceFrom: 32000,
+  intro: "Berline compacte premium, design coupe et technologie de pointe.",
+  specs: [
+    "Moteur : 2.0 L 4 cylindres",
+    "Puissance : 190 ch",
+    "Boite : Automatique 8 rapports",
+    "Transmission : Traction avant"
+  ],
+  featured: true
+},
+{
+  id: "mercedes-classe-a",
+  brand: "Mercedes",
+  model: "Classe A",
+  name: "Mercedes Classe A",
+  pagePath: "/Marque/mercedes/store_mercedes/classe-a.html",
+  cardImage: "/src/mercedes/classe-a/grise/classe-a%20grise%201.png",
+  priceFrom: 34000,
+  intro: "Voiture compacte de luxe, alliant style, confort et technologie.",
+  specs: [
+  "Moteur : 2.0 L 4 cylindres",
+  "Puissance : 116 ch",
+  "Couple : 280 Nm",
+  "Boite : Automatique 8 rapports",
+  "0 a 100 km/h : 9.7 s",
+  "Transmission : Traction avant"
+],
+  featured: true
+}
+];
 module.exports = cars;
