@@ -222,6 +222,48 @@ const cars = [
   "Transmission : Traction avant"
 ],
   featured: true
-}
+},
+{
+  id: "porsche-911-carrera",
+  brand: "Porsche",
+  model: "911 Carrera",
+  name: "Porsche 911 Carrera",
+  pagePath: "/Marque/porsche/store_porsche/911-carrera.html",
+  cardImage: "/src/porsche/911-carrera/blanche/911-carrera%20blanche%201.png",
+  priceFrom: 140000,
+  intro: "Coupé sportif iconique, performance et design legendaires.",
+  specs: [
+    "Moteur : 3.0 L Boxer 6 cylindres biturbo",
+    "Puissance : 394 ch",
+    "Couple : 450 Nm",
+    "Boite : Automatique 8 rapports",
+    "0 a 100 km/h : 4.1 s",
+    "Transmission : Propulsion arrière"
+  ],
+  featured: true
+
+},
+{
+  id: "porsche-panamera",
+  brand: "Porsche",
+  model: "Panamera",
+  name: "Porsche Panamera",
+  pagePath: "/Marque/porsche/store_porsche/panamera.html",
+  cardImage: "/src/porsche/panamera/blanche/panamera%20blanche%201.png",
+  priceFrom: 170000,
+  intro: "La Porsche Panamera est une berline de luxe sportive, alliant élégance, confort premium et performances puissantes dignes de l’univers Porsche.",
+  specs: [
+    "Moteur : 2.9 V6 ou 3.0 V6 / V8 selon version",
+    "Puissance : 353 à 680 ch",
+    "Couple : 500 à 870 Nm",
+    "Boite : Automatique 8 rapports (PDK)",
+    "0 a 100 km/h : 5.3 s à 3.2 s",
+    "Transmission : Propulsion ou intégrale (AWD)"
+  ],
+  featured: true
+
+},
+
+
 ];
 module.exports = cars;

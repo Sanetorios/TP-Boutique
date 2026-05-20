@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panamera</title>
+  <link rel="stylesheet" href="panamera.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-home" href="/HomePage/HomePage.html">Retour accueil</a>
+    <div class="logo">
+      <h1>D&D</h1>
+      <p>Signature Automobile</p>
+    </div>
+  </header>
+
+  <main class="page">
+    <h2>Panamera</h2>
+    <p class="intro">La Porsche Panamera est une berline de luxe sportive, alliant élégance, confort premium et performances puissantes dignes de l’univers Porsche.</p>
+
+    <section class="vehicle-card">
+      <div class="carousel">
+        <button id="prevBtn" class="arrow-btn" type="button" aria-label="Image precedente">&#10094;</button>
+        <img id="carImage" class="vehicle-image" src="/src/porsche/panamera/blanche/panamera²%20blanche%201.png" alt="Panamera blanche" />
+        <button id="nextBtn" class="arrow-btn" type="button" aria-label="Image suivante">&#10095;</button>
+      </div>
+      <div id="vehicleCaption" class="vehicle-caption">Panamera - coloris blanche - photo 1/5</div>
+      <div class="color-picker" aria-label="Choix de couleur">
+        <button class="color-dot is-active" type="button" data-color="blanche" aria-label="Couleur blanche"></button>
+        <button class="color-dot" type="button" data-color="noire" aria-label="Couleur noire"></button>
+      </div>
+      <div class="vehicle-price">Prix: a partir de 170 0000 EUR</div>
+    </section>
+
+    <section class="spec-section">
+      <h3>Caracteristiques principales</h3>
+<ul class="spec-list">
+  <li>Moteur : 2.9 V6 ou 3.0 V6 / V8 selon version</li>
+  <li>Puissance : 353 à 680 ch</li>
+  <li>Couple : 500 à 870 Nm</li>
+  <li>Boite : Automatique 8 rapports (PDK)</li>
+  <li>0 a 100 km/h : 5.3 s à 3.2 s</li>
+  <li>Transmission : Propulsion ou intégrale (AWD)</li>
+</ul>
+    </section>
+
+  </main>
+  <script src="panamera.js"></script>
+  <script src="../loadCarData.js"></script>
+</body>
+</html>
