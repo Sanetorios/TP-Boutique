@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lamborghini Urus</title>
+  <link rel="stylesheet" href="urus.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-home" href="/HomePage/HomePage.html">Retour accueil</a>
+    <div class="logo">
+      <h1>D&D</h1>
+      <p>Signature Automobile</p>
+    </div>
+  </header>
+
+  <main class="page">
+    <h2>Lamborghini Urus</h2>
+    <p class="intro">SUV sport ultra luxe, performance et prestige reunis.</p>
+
+    <section class="vehicle-card">
+      <div class="carousel">
+        <button id="prevBtn" class="arrow-btn" type="button" aria-label="Image precedente">&#10094;</button>
+        <img id="carImage" class="vehicle-image" src="/src/lamborghini/urus/blanc/urus%20blanc%201.png" alt="Lamborghini Urus blanc" />
+        <button id="nextBtn" class="arrow-btn" type="button" aria-label="Image suivante">&#10095;</button>
+      </div>
+      <div id="vehicleCaption" class="vehicle-caption">Lamborghini Urus - coloris blanc - photo 1/5</div>
+      <div class="color-picker" aria-label="Choix de couleur">
+        <button class="color-dot is-active" type="button" data-color="blanc" aria-label="Couleur blanc"></button>
+        <button class="color-dot" type="button" data-color="orange" aria-label="Couleur orange"></button>
+      </div>
+      <div class="vehicle-price">Prix: a partir de 218 000 EUR</div>
+    </section>
+
+    <section class="spec-section">
+      <h3>Caracteristiques principales</h3>
+      <ul class="spec-list">
+        <li>Moteur: V8 4.0 L biturbo</li>
+        <li>Puissance: 657 ch</li>
+        <li>Couple: 850 Nm</li>
+        <li>Boite: Automatique 8 rapports</li>
+        <li>0 a 100 km/h: 3.6 s</li>
+        <li>Transmission: Integrale permanente</li>
+      </ul>
+    </section>
+
+  </main>
+  <script src="urus.js"></script>
+  <script src="../loadCarData.js"></script>
+</body>
+</html>

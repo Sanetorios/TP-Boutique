@@ -147,6 +147,44 @@ const cars = [
       "Design: Carrosserie aerodynamique et luxe moderne"
     ],
     featured: true
+  },
+  {
+    id: "lamborghini-urus",
+    brand: "Lamborghini",
+    model: "Urus",
+    name: "Lamborghini Urus",
+    pagePath: "/Marque/lamborghini/store_lamborghini/urus.html",
+    cardImage: "/src/lamborghini/urus/blanc/urus%20blanc%201.webp",
+    priceFrom: 218000,
+    intro: "SUV sport ultra luxe, performance et prestige reunis.",
+    specs: [
+      "Moteur: V8 4.0 L biturbo",
+      "Puissance: 657 ch",
+      "Couple: 850 Nm",
+      "Boite: Automatique 8 rapports",
+      "0 a 100 km/h: 3.6 s",
+      "Transmission: Integrale permanente"
+    ],
+    featured: true
+  },
+  {
+    id: "lamborghini-temerario",
+    brand: "Lamborghini",
+    model: "Temerario",
+    name: "Lamborghini Temerario",
+    pagePath: "/Marque/lamborghini/store_lamborghini/temerario.html",
+    cardImage: "/src/lamborghini/temerario/jaune/temerario%20jaune%201.webp",
+    priceFrom: 330000,
+    intro: "Supercar V12 hybrid, apogee de l innovation Lamborghini.",
+    specs: [
+      "Moteur: V12 6.5 L + moteur electrique hybrid",
+      "Puissance combinee: 1001 ch",
+      "Couple: 1000 Nm",
+      "Boite: Automatique 8 rapports",
+      "0 a 100 km/h: 2.7 s",
+      "Transmission: Integrale"
+    ],
+    featured: true
   }
 ];
 
