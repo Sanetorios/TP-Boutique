@@ -263,7 +263,43 @@ const cars = [
   featured: true
 
 },
-
-
+{
+  id: "volkswagen-t-roc",
+  brand: "Volkswagen",
+  model: "T-Roc",
+  name: "Volkswagen T-Roc",
+  pagePath: "/Marque/volkswagen/volkswagen_store/T-Roc.html",
+  cardImage: "/src/volkswagen/t-roc/jaune/t-roc%20jaune%201.png",
+  priceFrom: 40000,
+  intro: "SUV compact polyvalent, design moderne et technologie accessible.",
+  specs: [
+    "Moteur : 1.5 TSI 4 cylindres",
+    "Puissance : 150 ch",
+    "Couple : 250 Nm",
+    "Boite : Automatique DSG 7 rapports",
+    "0 a 100 km/h : 8.4 s",
+    "Transmission : Traction avant (4Motion en option)"
+  ],
+  featured: true
+},
+{
+  id: "volkswagen-golf",
+  brand: "Volkswagen",
+  model: "Golf",
+  name: "Volkswagen Golf",
+  pagePath: "/Marque/volkswagen/volkswagen_store/golf.html",
+  cardImage: "/src/volkswagen/golf/blanche/golf%20blanche%201.png",
+  priceFrom: 32000,
+  intro: "Voiture compacte iconique, alliant polyvalence, confort et technologie moderne.",
+  specs: [
+    "Moteur : 1.5 TSI 4 cylindres",
+    "Puissance : 150 ch",
+    "Couple : 250 Nm",
+    "Boite : Automatique DSG 7 rapports",
+    "0 a 100 km/h : 8.4 s",
+    "Transmission : Traction avant (4Motion en option)"
+  ],
+  featured: true
+}
 ];
 module.exports = cars;
