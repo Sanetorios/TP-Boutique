@@ -1,7 +1,10 @@
+// Contrôleur backend pour les données de voitures.
+// Ce fichier contient la logique des endpoints API.
 const cars = require("../data/carsData");
 const stockManager = require("../data/stockManager");
 
 function sendJson(res, statusCode, payload) {
+  // Envoie une réponse JSON au client.
   res.writeHead(statusCode, { "Content-Type": "application/json; charset=utf-8" });
   res.end(JSON.stringify(payload));
 }
@@ -20,12 +23,15 @@ function toSummary(car) {
 }
 
 function getCars(req, res, url) {
+  // Récupère la liste des voitures.
+  // Si featured=true dans l'URL, on ne renvoie que les voitures en vedette.
   const featuredOnly = url.searchParams.get("featured") === "true";
   const selectedCars = featuredOnly ? cars.filter((car) => car.featured) : cars;
   sendJson(res, 200, selectedCars.map(toSummary));
 }
 
 function getCarById(req, res, id) {
+  // Renvoie les détails d'une voiture à partir de son identifiant.
   const car = cars.find((item) => item.id === id);
   if (!car) {
     sendJson(res, 404, { error: "Car not found" });
@@ -36,6 +42,7 @@ function getCarById(req, res, id) {
 }
 
 function buyCar(req, res, carId) {
+  // Tente d'acheter une voiture et de diminuer le stock.
   const car = cars.find((item) => item.id === carId);
   if (!car) {
     sendJson(res, 404, { error: "Car not found" });

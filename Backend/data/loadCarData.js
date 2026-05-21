@@ -1,3 +1,5 @@
+// Ce script front-end charge les détails de la voiture depuis l'API backend.
+// Il est placé dans Backend/data, mais n'est pas du code serveur.
 (() => {
   const path = window.location.pathname;
   const pathParts = path.split("/").filter(Boolean);

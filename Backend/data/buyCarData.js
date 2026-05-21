@@ -1,3 +1,5 @@
+// Ce script est en réalité un script front-end pour gérer l'achat sur la page voiture.
+// Il se trouve dans Backend/data, mais il agit côté client dans le navigateur.
 (() => {
   const path = window.location.pathname;
   const pathParts = path.split("/").filter(Boolean);

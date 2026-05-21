@@ -1,3 +1,4 @@
+/* //-------css origin debut -------- */
 ﻿* {
   box-sizing: border-box;
 }
@@ -57,7 +58,9 @@ body {
   border: 1px solid #d6deeb;
   border-radius: 12px;
   padding: 22px;
+
 }
+/* //--------css origin fin ------ */
 
 .page h2 {
   margin-top: 0;

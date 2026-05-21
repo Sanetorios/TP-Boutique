@@ -1,3 +1,5 @@
+// Données de voitures utilisées par le backend.
+// Chaque objet décrit un modèle, son prix, sa page et ses caractéristiques.
 const cars = [
   {
     id: "bmw-120d",
