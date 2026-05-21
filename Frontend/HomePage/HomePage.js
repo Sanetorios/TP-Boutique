@@ -54,3 +54,22 @@ brandMenuLinks.forEach(function (link) {
     });
 });
 
+const brandFilter = document.getElementById("brandFilter");
+const carCards = document.querySelectorAll(".car-card");
+
+if (brandFilter) {
+    brandFilter.addEventListener("change", function () {
+        const selectedBrand = this.value;
+        
+        carCards.forEach(function (card) {
+            const cardBrand = card.getAttribute("data-brand");
+            
+            if (selectedBrand === "all" || cardBrand === selectedBrand) {
+                card.classList.remove("hidden");
+            } else {
+                card.classList.add("hidden");
+            }
+        });
+    });
+}
+

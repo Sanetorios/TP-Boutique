@@ -1,10 +1,16 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const url = require('url');
+
+const { handleCarsRoutes } = require('./Backend/routes/carsRouter');
+const stockManager = require('./Backend/data/stockManager');
 
 const frontendRoot = path.join(__dirname, 'Frontend');
 const backendSrcRoot = path.join(__dirname, 'Backend', 'src');
 const port = process.env.PORT || 3000;
+
+stockManager.initializeStock();
 
 const mimeTypes = {
   '.html': 'text/html',
@@ -23,8 +29,14 @@ const mimeTypes = {
 };
 
 const server = http.createServer((req, res) => {
-  let requestPath = req.url.split('?')[0];
+  const parsedUrl = url.parse(req.url, true);
+  let requestPath = parsedUrl.pathname;
   requestPath = decodeURIComponent(requestPath);
+
+  if (handleCarsRoutes(req, res, parsedUrl)) {
+    return;
+  }
+
   if (requestPath === '/' || requestPath === '') {
     res.writeHead(302, { Location: '/HomePage/HomePage.html' });
     res.end();

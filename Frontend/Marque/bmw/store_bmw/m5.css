@@ -145,6 +145,40 @@ body {
   color: #1f2b3d;
 }
 
+.stock-section {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.stock-section p {
+  margin: 0;
+  font-weight: 700;
+  color: #1f2b3d;
+}
+
+.buy-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #1f2b3d;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.buy-button:hover:not(:disabled) {
+  background: #2a3a50;
+}
+
+.buy-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .spec-section {
   margin-top: 18px;
   padding: 16px;

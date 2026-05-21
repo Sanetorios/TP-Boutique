@@ -31,8 +31,10 @@
         <button class="color-dot" type="button" data-color="bleu" aria-label="Couleur bleue"></button>
         <button class="color-dot" type="button" data-color="grise" aria-label="Couleur grise"></button>
       </div>
-      <div class="vehicle-price">Prix: a partir de 410 000 EUR</div>
-    </section>
+      <div class="vehicle-price">Prix: a partir de 410 000 EUR</div>      <div class="stock-section">
+        <p id="stockDisplay">Stock: <span id="stockCount">10</span> unité(s)</p>
+        <button id="buyBtn" class="buy-button" type="button">Acheter</button>
+      </div>    </section>
 
     <section class="spec-section">
       <h3>Caracteristiques principales</h3>
@@ -47,5 +49,7 @@
   </main>
 
   <script src="812.js"></script>
+  <script src="../loadCarData.js"></script>
+  <script src="../buyCarData.js"></script>
 </body>
 </html>

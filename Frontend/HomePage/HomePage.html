@@ -97,9 +97,25 @@
         </section>
 
         <section id="cars" class="section-card reveal delay-3">
-            <h2>Nos voitures</h2>
+            <div class="cars-header">
+                <h2>Nos voitures</h2>
+                <div class="filter-container">
+                    <label for="brandFilter">Trier par marque :</label>
+                    <select id="brandFilter" class="brand-filter">
+                        <option value="all">Toutes les marques</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Alfa Romeo">Alfa Romeo</option>
+                        <option value="Audi">Audi</option>
+                        <option value="Ferrari">Ferrari</option>
+                        <option value="Lamborghini">Lamborghini</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Porsche">Porsche</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                    </select>
+                </div>
+            </div>
             <div class="car-list">
-                <article class="car-card">
+                <article class="car-card" data-brand="BMW">
                     <img src="/src/bmw/120d/blanche/120d%20blanche%201.webp" alt="BMW 120d blanche" />
                     <div class="car-info">
                         <h3>BMW 120d</h3>
@@ -108,7 +124,7 @@
                     <a class="car-cta" href="../Marque/bmw/store_bmw/120d.html">Voir l'annonce</a>
                 </article>
 
-                <article class="car-card">
+                <article class="car-card" data-brand="BMW">
                     <img src="/src/bmw/M5/bleu/M5%20bleu%201.webp" alt="BMW M5 Touring bleue" />
                     <div class="car-info">
                         <h3>BMW M5 Touring</h3>
@@ -117,7 +133,7 @@
                     <a class="car-cta" href="../Marque/bmw/store_bmw/m5.html">Voir l'annonce</a>
                 </article>
 
-                <article class="car-card">
+                <article class="car-card" data-brand="Alfa Romeo">
                     <img src="/src/alfa-romeo/giulia/blue/giulia%20bleue%201.png" alt="Alfa Romeo Giulia bleue" />
                     <div class="car-info">
                         <h3>Alfa Romeo Giulia</h3>
@@ -126,7 +142,7 @@
                     <a class="car-cta" href="../Marque/alfa-romeo/store_alfa-romeo/giulia.html">Voir l'annonce</a>
                 </article>
 
-                <article class="car-card">
+                <article class="car-card" data-brand="Alfa Romeo">
                     <img src="/src/alfa-romeo/tonale/bleu/tonale%20bleu%201.png" alt="Alfa Romeo Tonale bleue" />
                     <div class="car-info">
                         <h3>Alfa Romeo Tonale</h3>
@@ -135,7 +151,7 @@
                     <a class="car-cta" href="../Marque/alfa-romeo/store_alfa-romeo/tonale.html">Voir l'annonce</a>
                 </article>
 
-                <article class="car-card">
+                <article class="car-card" data-brand="Audi">
                     <img src="/src/audi/a1/grise/a1%20grise%201.png" alt="Audi A1 grise" />
                     <div class="car-info">
                         <h3>Audi A1</h3>
@@ -144,7 +160,7 @@
                     <a class="car-cta" href="../Marque/audi/store_audi/a1.html">Voir l'annonce</a>
                 </article>
 
-                <article class="car-card">
+                <article class="car-card" data-brand="Audi">
                     <img src="/src/audi/sq8/blanche/sq8%20blanche%201.png" alt="Audi SQ8 blanche" />
                     <div class="car-info">
                         <h3>Audi SQ8</h3>
@@ -153,7 +169,7 @@
                     <a class="car-cta" href="../Marque/audi/store_audi/sq8.html">Voir l'annonce</a>
                 </article>
 
-                <article class="car-card">
+                <article class="car-card" data-brand="Ferrari">
                     <img src="/src/ferrari/812/rouge/812%20rouge%201.webp" alt="Ferrari 812 rouge" />
                     <div class="car-info">
                         <h3>Ferrari 812</h3>
@@ -162,7 +178,7 @@
                     <a class="car-cta" href="../Marque/ferrari/store_ferrari/812.html">Voir l'annonce</a>
                 </article>
 
-                <article class="car-card">
+                <article class="car-card" data-brand="Ferrari">
                     <img src="/src/ferrari/roma/rouge/roma%20rouge%201.png" alt="Ferrari Roma rouge" />
                     <div class="car-info">
                         <h3>Ferrari Roma</h3>
@@ -171,7 +187,7 @@
                     <a class="car-cta" href="../Marque/ferrari/store_ferrari/roma.html">Voir l'annonce</a>
                 </article>
 
-                <article class="car-card">
+                <article class="car-card" data-brand="Lamborghini">
                     <img src="/src/lamborghini/urus/blanc/urus%20blanc%201.png" alt="Lamborghini Urus blanc" />
                     <div class="car-info">
                         <h3>Lamborghini Urus</h3>
@@ -180,7 +196,7 @@
                     <a class="car-cta" href="../Marque/lamborghini/store_lamborghini/urus.html">Voir l'annonce</a>
                 </article>
 
-                <article class="car-card">
+                <article class="car-card" data-brand="Lamborghini">
                     <img src="/src/lamborghini/temerario/jaune/temerario%20jaune%201.png" alt="Lamborghini Temerario jaune" />
                     <div class="car-info">
                         <h3>Lamborghini Temerario</h3>
@@ -189,7 +205,7 @@
                     <a class="car-cta" href="../Marque/lamborghini/store_lamborghini/temerario.html">Voir l'annonce</a>
                 </article>
 
-                <article class="car-card">
+                <article class="car-card" data-brand="Mercedes">
                     <img src="/src/mercedes/cla/grise/cla%20grise%201.png" alt="Mercedes CLA grise" />
                     <div class="car-info">
                         <h3>Mercedes CLA</h3>
@@ -198,7 +214,7 @@
                     <a class="car-cta" href="../Marque/mercedes/store_mercedes/cla.html">Voir l'annonce</a>
                 </article>
                 
-                <article class="car-card">
+                <article class="car-card" data-brand="Mercedes">
                     <img src="/src/mercedes/classe-a/grise/classe-a%20grise%201.png" alt="Mercedes Classe A grise" />
                     <div class="car-info">
                         <h3>Mercedes Classe A</h3>
@@ -207,7 +223,7 @@
                     <a class="car-cta" href="../Marque/mercedes/store_mercedes/classe-a.html">Voir l'annonce</a>
                 </article>
 
-                <article class="car-card">
+                <article class="car-card" data-brand="Porsche">
                     <img src="/src/porsche/911-carrera/blanche/911-carrera%20blanche%201.png" alt="Porsche 911 Carrera blanche" />
                     <div class="car-info">
                         <h3>911 Carrera</h3>
@@ -216,7 +232,7 @@
                     <a class="car-cta" href="../Marque/porsche/store_porsche/911-carrera.html">Voir l'annonce</a>
                 </article>
 
-                <article class="car-card">
+                <article class="car-card" data-brand="Porsche">
                     <img src="/src/porsche/panamera/blanche/panamera%20blanche%201.png" alt="Porsche Panamera blanche" />
                     <div class="car-info">
                         <h3>Panamera</h3>
@@ -225,7 +241,7 @@
                     <a class="car-cta" href="../Marque/porsche/store_porsche/panamera.html">Voir l'annonce</a>
                 </article>
 
-                <article class="car-card">
+                <article class="car-card" data-brand="Volkswagen">
                     <img src="/src/volkswagen/t-roc/jaune/t-roc%20jaune%201.png" alt="Volkswagen T-Roc jaune" />
                     <div class="car-info">
                         <h3>Volkswagen T-Roc</h3>
@@ -234,7 +250,7 @@
                     <a class="car-cta" href="../Marque/volkswagen/volkswagen_store/T-Roc.html">Voir l'annonce</a>
                 </article>
 
-                <article class="car-card">
+                <article class="car-card" data-brand="Volkswagen">
                     <img src="/src/volkswagen/golf/bleu/golf%20bleu%201.png" alt="Volkswagen Golf bleu" />
                     <div class="car-info">
                         <h3>Volkswagen Golf</h3>
