@@ -30,7 +30,11 @@
         <button class="color-dot is-active" type="button" data-color="blanche" aria-label="Couleur blanche"></button>
         <button class="color-dot" type="button" data-color="noire" aria-label="Couleur noire"></button>
       </div>
-      <div class="vehicle-price">Prix: a partir de 170 0000 EUR</div>
+      <div class="vehicle-price">Prix: a partir de 170 000 EUR</div>
+      <div class="stock-section">
+        <p id="stockDisplay">Stock: <span id="stockCount">10</span> unité(s)</p>
+        <button id="buyBtn" class="buy-button" type="button">Acheter</button>
+      </div>
     </section>
 
     <section class="spec-section">
@@ -47,6 +51,7 @@
 
   </main>
   <script src="panamera.js"></script>
-  <script src="../loadCarData.js"></script>
+  <script src="/data/loadCarData.js"></script>
+  <script src="/data/buyCarData.js"></script>
 </body>
 </html>

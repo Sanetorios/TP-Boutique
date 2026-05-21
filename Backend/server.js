@@ -8,7 +8,6 @@ const stockManager = require('./Backend/data/stockManager');
 
 const frontendRoot = path.join(__dirname, 'Frontend');
 const backendSrcRoot = path.join(__dirname, 'Backend', 'src');
-const backendDataRoot = path.join(__dirname, 'Backend', 'data');
 const port = process.env.PORT || 3000;
 
 stockManager.initializeStock();
@@ -45,17 +44,10 @@ const server = http.createServer((req, res) => {
   }
 
   const isSrcRequest = requestPath.startsWith('/src/');
-  const isDataRequest = requestPath.startsWith('/data/');
-  let baseRoot = frontendRoot;
-  let relativePath = requestPath.replace(/^\/+/, '');
-  
-  if (isSrcRequest) {
-    baseRoot = backendSrcRoot;
-    relativePath = requestPath.slice('/src/'.length);
-  } else if (isDataRequest) {
-    baseRoot = backendDataRoot;
-    relativePath = requestPath.slice('/data/'.length);
-  }
+  const baseRoot = isSrcRequest ? backendSrcRoot : frontendRoot;
+  const relativePath = isSrcRequest
+    ? requestPath.slice('/src/'.length)
+    : requestPath.replace(/^\/+/, '');
 
   const filePath = path.resolve(baseRoot, relativePath);
   const safeRoot = path.resolve(baseRoot);
