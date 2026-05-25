@@ -16,6 +16,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
+    "start:backend": "node Backend/server.js",
+    "start:frontend": "node Frontend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

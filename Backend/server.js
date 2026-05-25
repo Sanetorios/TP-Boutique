@@ -6,13 +6,13 @@ const path = require('path');
 const url = require('url');
 
 // Routeur de l'API cars (/api/cars, /api/buy).
-const { handleCarsRoutes } = require('./Backend/routes/carsRouter');
+const { handleCarsRoutes } = require('./routes/carsRouter');
 // Gestion du stock en mémoire pour les achats de voitures.
-const stockManager = require('./Backend/data/stockManager');
+const stockManager = require('./data/stockManager');
 
 // Dossiers de fichiers statiques.
-const frontendRoot = path.join(__dirname, 'Frontend');
-const backendSrcRoot = path.join(__dirname, 'Backend', 'src');
+const frontendRoot = path.join(__dirname, '..', 'Frontend');
+const backendSrcRoot = path.join(__dirname, 'src');
 const port = process.env.PORT || 3000;
 
 // Initialisation du stock au démarrage du serveur.
